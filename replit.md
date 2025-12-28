@@ -1,4 +1,4 @@
-# Imbreezo - Cybersecurity Portfolio
+# Paritosh - Cybersecurity Portfolio
 
 ## Overview
 A personal portfolio website showcasing cybersecurity skills, projects, certifications, and contact information.
