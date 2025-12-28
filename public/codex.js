@@ -33,3 +33,13 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 });
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  // Optional: animate hamburger to X
+  hamburger.classList.toggle('open');
+});
+

@@ -83,3 +83,46 @@ footer {text-align:center; padding:20px; background:#111428; color:#888; font-si
   .skill-card {font-size:0.95rem; padding:14px 18px;}
   .profile-pic {width:45px; height:45px;}
 }
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  background: #00ffc3;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile styling */
+@media (max-width:768px) {
+  nav ul {
+    position: fixed;
+    top: 60px; /* below navbar */
+    right: -100%;
+    flex-direction: column;
+    background: #111428;
+    width: 200px;
+    padding: 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    border-radius: 0 0 0 12px;
+    height: calc(100% - 60px);
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
