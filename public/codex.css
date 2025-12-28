@@ -126,3 +126,15 @@ footer {text-align:center; padding:20px; background:#111428; color:#888; font-si
   }
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: relative; /* needed for z-index */
+  z-index: 1010;      /* above nav */
+}
+
+
